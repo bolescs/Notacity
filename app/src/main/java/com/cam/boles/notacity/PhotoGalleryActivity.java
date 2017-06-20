@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by boles on 5/19/2017.
+ *
+ * Activity acting as parent of GalleryFragment.
  */
 
 public class PhotoGalleryActivity extends AppCompatActivity {

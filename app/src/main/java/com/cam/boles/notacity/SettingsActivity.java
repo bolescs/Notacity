@@ -1,46 +1,28 @@
 package com.cam.boles.notacity;
 
-import android.content.Context;
-import android.content.Intent;
+
 import android.content.SharedPreferences;
-import android.content.res.Resources;
-import android.graphics.Paint;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.format.DateFormat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
-import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.CompoundButton;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
-import android.widget.RelativeLayout;
-import android.widget.Switch;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.signature.StringSignature;
-import com.chauthai.swipereveallayout.SwipeRevealLayout;
-
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 
 /**
  * Created by boles on 5/5/2017.
+ *
+ * This class allows users to change theme and view licenses.
  */
 
 public class SettingsActivity extends AppCompatActivity {
@@ -52,7 +34,6 @@ public class SettingsActivity extends AppCompatActivity {
     private static final String PREF_CURRENT_THEME_COLOR = "current_color";
 
     private LinearLayout mChooseTheme;
-    private TextView mThemeName;
     private ImageView mThemeColor;
     private List<ThemeOption> themeObjects;
     private AlertDialog alert;
@@ -93,6 +74,7 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+        //Create each available theme (must be better way of doing this?)
         themeObjects = new ArrayList<>();
         themeObjects.add(new ThemeOption(ThemeOption.ORIGINAL_THEME, R.color.colorPrimary));
         themeObjects.add(new ThemeOption(ThemeOption.MIDNIGHT_THEME, R.color.colorPrimaryInverse));

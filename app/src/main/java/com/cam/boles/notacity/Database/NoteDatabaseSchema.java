@@ -2,6 +2,8 @@ package com.cam.boles.notacity.Database;
 
 /**
  * Created by boles on 5/6/2017.
+ *
+ * Class defines column titles for table.
  */
 
 public class NoteDatabaseSchema {

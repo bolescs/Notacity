@@ -6,6 +6,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 /**
  * Created by boles on 5/6/2017.
+ *
+ *  Class creates database table.
  */
 
 public class NoteBaseHelper extends SQLiteOpenHelper {

@@ -10,6 +10,8 @@ import java.util.UUID;
 
 /**
  * Created by boles on 5/6/2017.
+ *
+ * Class allows for retrieval of data.
  */
 
 public class NoteCursorWrapper extends CursorWrapper {

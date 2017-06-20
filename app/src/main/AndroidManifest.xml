@@ -36,11 +36,6 @@
             android:parentActivityName="com.cam.boles.notacity.MainActivity"
             android:label="@string/settings">
         </activity>
-        <activity android:name="com.cam.boles.notacity.LicensesActivity"
-            android:screenOrientation="portrait"
-            android:parentActivityName="com.cam.boles.notacity.SettingsActivity"
-            android:label="@string/open_source_licences">
-        </activity>
         <activity android:name="com.cam.boles.notacity.PhotoGalleryActivity"
             android:screenOrientation="portrait"
             android:parentActivityName="com.cam.boles.notacity.MainActivity"

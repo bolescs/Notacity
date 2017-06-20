@@ -25,6 +25,8 @@ import java.io.File;
 
 /**
  * Created by boles on 5/25/2017.
+ *
+ * This class is used for displaying fullscreen images that are not part of the viewpager.
  */
 
 public class ImageActivity extends AppCompatActivity implements GestureDetector.OnGestureListener {

@@ -17,6 +17,8 @@ import java.util.List;
 
 /**
  * Created by boles on 5/19/2017.
+ *
+ * Adapter for the Photo Gallery.
  */
 
 public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ImageHolder> {

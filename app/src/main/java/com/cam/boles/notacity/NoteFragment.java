@@ -59,6 +59,8 @@ import java.util.UUID;
 
 /**
  * Created by boles on 5/6/2017.
+ *
+ * This fragment displays all information about a specific note and offers many actions.
  */
 
 public class NoteFragment extends Fragment implements View.OnLongClickListener, GestureDetector.OnGestureListener {
@@ -144,6 +146,7 @@ public class NoteFragment extends Fragment implements View.OnLongClickListener, 
         mTitle = (EditText) rootView.findViewById(R.id.new_note_title);
         mTitle.setText(mNote.getTitle());
         getActivity().setTitle(mNote.getTitle());
+        //Update title as typed.
         mTitle.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -173,6 +176,7 @@ public class NoteFragment extends Fragment implements View.OnLongClickListener, 
         mBody = (EditText) rootView.findViewById(R.id.new_note_body);
         mBody.setText(mNote.getBody());
 
+        //Necessary for using bullets/numbers and updating body in database.
         mBody.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -242,6 +246,7 @@ public class NoteFragment extends Fragment implements View.OnLongClickListener, 
         mStyleBar = (LinearLayout) rootView.findViewById(R.id.style_layout);
         mBullets = (ImageButton) rootView.findViewById(R.id.bullet_button);
         mNumberList = (ImageButton) rootView.findViewById(R.id.number_button);
+        //Must use proper buttons based on theme
         if (MainActivity.userTheme.equals(ThemeOption.MIDNIGHT_THEME)
                 || MainActivity.userTheme.equals(ThemeOption.BLACK_THEME)) {
             mBullets.setImageResource(R.drawable.ic_action_white_bullets);
@@ -494,7 +499,6 @@ public class NoteFragment extends Fragment implements View.OnLongClickListener, 
         switch (item.getItemId()) {
 
             case android.R.id.home:
-                //Snackbar.make(getView(), "Note Saved", Snackbar.LENGTH_SHORT).show();
                 getActivity().getSupportFragmentManager().popBackStackImmediate();
                 return true;
 
@@ -572,37 +576,4 @@ public class NoteFragment extends Fragment implements View.OnLongClickListener, 
         }
         return true;
     }
-
-    /*
-    private class CorrectBitmapTask extends AsyncTask<Void, Void, Bitmap> {
-
-        // Runs in UI before background thread is called
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-
-        // This is run in a background thread
-        @Override
-        protected Bitmap doInBackground(Void... params) {
-
-            Bitmap bitmap = PictureUtils.getScaledBitmap(mPhotoFile.getPath(), getActivity());
-            try {
-                bitmap = PictureUtils.determineRotation(bitmap, mPhotoFile.getPath());
-            }
-            catch (IOException e) {
-                Toast.makeText(getActivity(), "Image Error.", Toast.LENGTH_SHORT).show();
-            }
-            return bitmap;
-        }
-
-        // This runs in UI when background thread finishes
-        @Override
-        protected void onPostExecute(Bitmap bitmap) {
-            super.onPostExecute(bitmap);
-            mProgress.setVisibility(View.GONE);
-            mPicture.setImageBitmap(bitmap);
-        }
-    }
-        */
 }

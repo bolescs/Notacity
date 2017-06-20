@@ -1,14 +1,11 @@
 package com.cam.boles.notacity;
 
-import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
-import android.graphics.Point;
 import android.media.ExifInterface;
-import android.os.Environment;
 import android.util.Log;
 
 import java.io.File;
@@ -19,7 +16,7 @@ import java.io.IOException;
 /**
  * Created by Cameron Boles
  *
- * This class sets the necessary dimensions and display data for taken image.
+ * This class compresses image files in order to optimize memory usage.
  */
 
 public class PictureUtils

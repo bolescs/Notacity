@@ -17,6 +17,8 @@ import java.util.List;
 
 /**
  * Created by boles on 5/19/2017.
+ *
+ * Fragment displaying recyclerview of images in photo gallery.
  */
 
 public class MyGalleryFragment extends Fragment {

@@ -32,7 +32,6 @@ import java.util.UUID;
 public class GalleryViewPager extends AppCompatActivity {
 
     public static final String EXTRA_NOTE_ID = "noteId";
-    public static final String VIEW_PAGER_IMAGE_CHILD = "imageview_child";
 
     private ViewPager mViewPager;
     private List<Note> mNotes;
@@ -95,70 +94,5 @@ public class GalleryViewPager extends AppCompatActivity {
                 break;
             }
         }
-        //handleGestures();
-
-        /*
-        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                TouchImageView image = (TouchImageView) mViewPager.findViewWithTag(VIEW_PAGER_IMAGE_CHILD);
-                image.resetZoom();
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-                TouchImageView image = (TouchImageView) mViewPager.findViewWithTag(VIEW_PAGER_IMAGE_CHILD);
-                image.resetZoom();
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
-        */
     }
-
-    /*
-    private void handleGestures() {
-        final GestureDetectorCompat detectorCompat = new GestureDetectorCompat(this, new TapGestureListener());
-        mViewPager.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                detectorCompat.onTouchEvent(event);
-                return false;
-            }
-        });
-    }
-
-    private class TapGestureListener extends GestureDetector.SimpleOnGestureListener {
-
-        @Override
-        public boolean onSingleTapUp(MotionEvent e) {
-            if (screenTapped) {
-                mViewPager.setSystemUiVisibility(
-                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
-                screenTapped = false;
-            } else {
-                mViewPager.setSystemUiVisibility(
-                        View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION // hide nav bar
-                                | View.SYSTEM_UI_FLAG_FULLSCREEN // hide status bar
-                                | View.SYSTEM_UI_FLAG_IMMERSIVE);
-                screenTapped = true;
-            }
-            super.onSingleTapUp(e);
-            return true;
-        }
-
-    }
-    */
-
-
-
-
 }

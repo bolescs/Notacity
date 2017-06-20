@@ -1,18 +1,17 @@
 package com.cam.boles.notacity;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 
 
+/**
+ * Created by boles
+ *
+ * Our MainActivity acts as parent for MyNotesFragment.
+ */
 
 public class MainActivity extends AppCompatActivity {
 

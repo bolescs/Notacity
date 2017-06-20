@@ -1,24 +1,17 @@
 package com.cam.boles.notacity;
 
 
-import android.app.SearchManager;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.view.GestureDetectorCompat;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
@@ -26,24 +19,19 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.text.format.DateFormat;
-import android.view.GestureDetector;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.signature.StringSignature;
@@ -58,6 +46,8 @@ import java.util.Locale;
 
 /**
  * Created by boles on 5/6/2017.
+ *
+ * This class displays user's notes in a recyclerview.
  */
 
 public class MyNotesFragment extends Fragment implements SearchView.OnQueryTextListener {
@@ -123,6 +113,7 @@ public class MyNotesFragment extends Fragment implements SearchView.OnQueryTextL
         mNewNote = (FloatingActionButton) rootView.findViewById(R.id.new_note_button);
         mExit = (FloatingActionButton) rootView.findViewById(R.id.button_exit);
 
+        //Must update theme.
         switch (MainActivity.userTheme) {
             case ThemeOption.ORIGINAL_THEME:
                 mCollapsingLayout.setBackgroundColor(ContextCompat.getColor(getActivity(), R.color.white));
@@ -173,6 +164,7 @@ public class MyNotesFragment extends Fragment implements SearchView.OnQueryTextL
                 break;
         }
 
+        //Filter button listener
         filterActive = false;
         mFilter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -549,8 +541,6 @@ public class MyNotesFragment extends Fragment implements SearchView.OnQueryTextL
             });
             return true;
         }
-
-
 
         private void openLayouts() {
             viewBinderHelper.setOpenOnlyOne(false);

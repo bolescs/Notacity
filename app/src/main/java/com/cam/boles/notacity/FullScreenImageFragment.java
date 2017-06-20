@@ -28,12 +28,11 @@ import java.util.UUID;
 
 /**
  * Created by boles on 5/10/2017.
+ *
+ * This class provide the fragment to be displayed within the GalleryViewPager.
  */
 
 public class FullScreenImageFragment extends Fragment {
-
-    public static final String IMAGE_PATH = "image_path";
-    public static final String LAUNCHED_FROM = "null";
 
     private static final String ARG_NOTE_ID = "note_id";
     private static final int SWIPE_MIN_DISTANCE = 120;
@@ -43,7 +42,6 @@ public class FullScreenImageFragment extends Fragment {
     private ProgressBar mProgress;
     private TouchImageView mImage;
     private File mPhotoFile;
-    private String mLaunchedFrom;
     private Note mNote;
     private boolean screenTapped;
 
@@ -97,6 +95,9 @@ public class FullScreenImageFragment extends Fragment {
         return rootView;
     }
 
+    /**
+     * Required for detecting tapUp.
+     */
     private void handleGestures() {
         final GestureDetectorCompat detectorCompat = new GestureDetectorCompat(getActivity(), new TapGestureListener());
         mImage.setOnTouchListener(new View.OnTouchListener() {
@@ -108,6 +109,9 @@ public class FullScreenImageFragment extends Fragment {
         });
     }
 
+    /**
+     * Inner class handling taps.
+     */
     private class TapGestureListener extends GestureDetector.SimpleOnGestureListener {
 
         @Override

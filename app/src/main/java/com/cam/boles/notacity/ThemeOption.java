@@ -2,6 +2,8 @@ package com.cam.boles.notacity;
 
 /**
  * Created by boles on 6/7/2017.
+ *
+ * Class for theme objects.
  */
 
 public class ThemeOption {
