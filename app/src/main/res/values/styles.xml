@@ -1,0 +1,101 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/TextViewStyleLight</item>
+        <item name="android:colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <!-- Midnight theme -->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimaryInverse</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkInverse</item>
+        <item name="colorAccent">@color/colorAccentInverse</item>
+        <item name="android:textViewStyle">@style/TextViewStyleDark</item>
+        <item name="android:colorButtonNormal">@color/colorPrimaryInverse</item>
+    </style>
+
+    <!-- Classic Notepad theme -->
+    <style name="AppTheme.Classic" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/colorPrimaryLightClassic</item>
+        <item name="colorPrimary">@color/colorPrimaryClassic</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkClassic</item>
+        <item name="colorAccent">@color/colorAccentClassic</item>
+        <item name="android:textViewStyle">@style/TextViewStyleLight</item>
+        <item name="android:colorButtonNormal">@color/colorPrimaryClassic</item>
+    </style>
+
+    <!-- Cloud theme -->
+    <style name="AppTheme.Cloud" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryCloud</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkCloud</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/TextViewStyleLight</item>
+        <item name="android:colorButtonNormal">@color/colorPrimaryCloud</item>
+    </style>
+
+    <!-- Black theme -->
+    <style name="AppTheme.Black" parent="Theme.AppCompat">
+        <item name="android:windowBackground">@color/blackWindow</item>
+        <item name="colorPrimary">@color/blackPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/TextViewStyleDark</item>
+        <item name="android:colorButtonNormal">@color/black</item>
+    </style>
+
+    <!-- Red theme -->
+    <style name="AppTheme.White" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/redPrimary</item>
+        <item name="colorPrimaryDark">@color/redDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/TextViewStyleLight</item>
+        <item name="android:colorButtonNormal">@color/redPrimary</item>
+    </style>
+
+    <!-- ImageActivity theme -->
+    <style name="AppTheme.NoTitle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="SwitchTextLight" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SwitchTextDark" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ButtonColorLight" parent="@android:style/Holo.ButtonBar">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="ButtonColorDark" parent="@android:style/Holo.ButtonBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="TextViewStyleLight" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextViewStyleDark" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme.Dark.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.Dark.PopupOverlay" parent="ThemeOverlay.AppCompat" />
+
+</resources>

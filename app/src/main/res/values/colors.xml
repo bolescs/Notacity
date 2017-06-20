@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Original theme colors -->
+    <color name="colorPrimary">#00CD00</color>
+    <color name="colorPrimaryDark">#00A400</color>
+    <color name="colorPrimaryLight">#80FFC6</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#000000</color>
+
+    <!-- Midnight theme colors -->
+    <color name="colorPrimaryInverse">#4D61B9</color>
+    <color name="colorPrimaryDarkInverse">#313D72</color>
+    <color name="colorPrimaryLightInverse">#818EC9</color>
+    <color name="windowBackgroundDark">#303030</color>
+    <color name="colorAccentInverse">#FF4081</color>
+    <color name="textColorPrimaryInverse">#FFFFFF</color>
+
+    <!-- Notepad theme -->
+    <color name="colorPrimaryClassic">#303030</color>
+    <color name="colorPrimaryDarkClassic">#262626</color>
+    <color name="colorPrimaryLightClassic">#FFFF66</color>
+    <color name="colorAccentClassic">#FF4081</color>
+
+    <!-- Cloud theme -->
+    <color name="colorPrimaryCloud">#1e90ff</color>
+    <color name="colorPrimaryDarkCloud">#0079F2</color>
+    <color name="colorPrimaryLightCloud">#87cefa</color>
+
+    <!-- Black theme -->
+    <color name="blackPrimary">#0E0E0E</color>
+    <color name="blackWindow">#202020</color>
+
+    <!-- Red theme -->
+    <color name="redPrimary">#DB0000</color>
+    <color name="redDark">#C10000</color>
+    <color name="redLight">#FF4444</color>
+
+    <!-- Extra colors -->
+    <color name="transparent">#00000000</color>
+    <color name="button_selected">#A9A9A9</color>
+    <color name="star_color">#CCCC00</color>
+    <color name="status_bar_opaque">#E9000000</color>
+    <color name="action_bar_opaque">#E9121212</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="divider_color">#E4E4E4</color>
+    <color name="red_delete">#F00000</color>
+    <color name="red_light">#FF8686</color>
+</resources>
